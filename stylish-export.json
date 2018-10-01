@@ -9,9 +9,29 @@
 				"updateUrl": "",
 				"sections": [
 					{
-						"code": "/* adblock */\n#ad_topslot_b,\n#ad_leftslot,\n#ad_contentslot_1,\n.cdo-tpl__z.cdo-tpl-main__z1,\n.cdo-tpl__z.cdo-tpl-main__z3.clrd,\n.cdo-promo,\n#footer,\n.share.rounded.js-share,\n.cdo-hdr__soc.resp.resp--lrg,\n.cdo-tpl__z.cdo-tpl-alt__z2.cdo-tpl-alt__z2--retract,\n#ad_mpuslot,\n.mod.mod--main.mod--border:nth-child(4)\n{\n\tdisplay: none;\n}\n\n/* center */\n#page-content,\n.cdo-tpl-main__zwA\n{\n\twidth: auto;\n\talign-items: center;\n}\n\n/* background \n.cdo-hdr-bg,\n.cdo-hdr\n{\n\tbackground: white;\n}\n*/",
+						"code": "/* adblock */\n#ad_topslot_b,\n#ad_leftslot,\n#ad_contentslot_1,\n.cdo-tpl__z.cdo-tpl-main__z1,\n.cdo-tpl__z.cdo-tpl-main__z3.clrd,\n.cdo-promo,\n#footer,\n.share.rounded.js-share,\n.cdo-hdr__soc.resp.resp--lrg,\n.cdo-tpl__z.cdo-tpl-alt__z2.cdo-tpl-alt__z2--retract,\n#ad_mpuslot,\n.mod.mod--main.mod--border:nth-child(4),\n#ad_btmslot_a\n{\n\tdisplay: none;\n}\n\n/* center */\n#page-content,\n.cdo-tpl-main__zwA\n{\n\twidth: auto;\n\talign-items: center;\n}\n\n/* background \n.cdo-hdr-bg,\n.cdo-hdr\n{\n\tbackground: white;\n}\n*/",
 						"domains": [
 							"cambridge.org"
+						],
+						"regexps": [],
+						"urlPrefixes": [],
+						"urls": []
+					}
+				]
+			}
+		},
+		{
+			"id": "1538404646191",
+			"json": {
+				"enabled": true,
+				"name": "adblock: etymonline",
+				"url": "",
+				"updateUrl": "",
+				"sections": [
+					{
+						"code": ".adContainer-left,\n.adContainer-top,\n.share-tool,\n.alphabet--3sMXd,\n.footer--zLQrv,\n.desc\n{\n\tdisplay: none;\n}",
+						"domains": [
+							"etymonline.com"
 						],
 						"regexps": [],
 						"urlPrefixes": [],
