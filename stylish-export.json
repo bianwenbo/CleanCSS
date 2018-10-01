@@ -1,0 +1,144 @@
+{
+	"data": [
+		{
+			"id": "1538392677791",
+			"json": {
+				"enabled": true,
+				"name": "adblock: cambridge",
+				"url": "",
+				"updateUrl": "",
+				"sections": [
+					{
+						"code": "/* adblock */\n#ad_topslot_b,\n#ad_leftslot,\n#ad_contentslot_1,\n.cdo-tpl__z.cdo-tpl-main__z1,\n.cdo-tpl__z.cdo-tpl-main__z3.clrd,\n.cdo-promo,\n#footer,\n.share.rounded.js-share,\n.cdo-hdr__soc.resp.resp--lrg,\n.cdo-tpl__z.cdo-tpl-alt__z2.cdo-tpl-alt__z2--retract,\n#ad_mpuslot,\n.mod.mod--main.mod--border:nth-child(4)\n{\n\tdisplay: none;\n}\n\n/* center */\n#page-content,\n.cdo-tpl-main__zwA\n{\n\twidth: auto;\n\talign-items: center;\n}\n\n/* background \n.cdo-hdr-bg,\n.cdo-hdr\n{\n\tbackground: white;\n}\n*/",
+						"domains": [
+							"cambridge.org"
+						],
+						"regexps": [],
+						"urlPrefixes": [],
+						"urls": []
+					}
+				]
+			}
+		},
+		{
+			"id": "1538267017176",
+			"json": {
+				"enabled": true,
+				"name": "acblock: zhihu",
+				"url": "",
+				"updateUrl": "",
+				"sections": [
+					{
+						"code": "/* Block sideColumn */\ndiv.Question-sideColumn.Question-sideColumn--sticky\n{\n\tdisplay: none;\n}\n\n/* Adjust mainColumn */\n.Question-mainColumn\n{\n\twidth: auto;\n}",
+						"domains": [
+							"zhihu.com"
+						],
+						"regexps": [],
+						"urlPrefixes": [],
+						"urls": []
+					}
+				]
+			}
+		},
+		{
+			"id": "1538357110938",
+			"json": {
+				"enabled": true,
+				"name": "adblock: wanqu.co",
+				"url": "",
+				"updateUrl": "",
+				"sections": [
+					{
+						"code": "#sidebar,\n#google_center_div,\n.small-promo-text\n{\n\tdisplay: none;\n}\n\n.col-lg-9\n{\n\twidth: auto;\n}\n\n.panel-body>.row:nth-child(6)\n{\n\tdisplay: none;\n}",
+						"domains": [
+							"wanqu.co"
+						],
+						"regexps": [],
+						"urlPrefixes": [],
+						"urls": []
+					}
+				]
+			}
+		},
+		{
+			"id": "1538239330230",
+			"json": {
+				"enabled": true,
+				"name": "adblock: userstyles",
+				"url": "",
+				"updateUrl": "",
+				"sections": [
+					{
+						"code": ".adContainer\n{\n\tdisplay: none;\n}",
+						"domains": [
+							"userstyles.org"
+						],
+						"regexps": [],
+						"urlPrefixes": [],
+						"urls": []
+					}
+				]
+			}
+		},
+		{
+			"id": "1538309586737",
+			"json": {
+				"enabled": true,
+				"name": "adblock: JD",
+				"url": "",
+				"updateUrl": "",
+				"sections": [
+					{
+						"code": "#J_event,\n.fs,\n.floors,\n#treasure,\n#hotwords,\n#logo,\n#J_mobile,\n#banner-bg,\n#J-detail-banner\n{\n\tdisplay: none;\n}",
+						"domains": [
+							"jd.com"
+						],
+						"regexps": [],
+						"urlPrefixes": [],
+						"urls": []
+					}
+				]
+			}
+		},
+		{
+			"id": "1538234182664",
+			"json": {
+				"enabled": true,
+				"name": "adblock: v2ex",
+				"url": "",
+				"updateUrl": "",
+				"sections": [
+					{
+						"code": "/* Author: BIAN\nRef: https://github.com/stylish-userstyles/stylish/wiki\nRef: https://www.w3schools.com/cssref/css_selectors.asp\nRef: https://www.w3schools.com/CSSref/sel_nth-child.asp\nRef: http://www.imooc.com/article/4849\n*/\n\n/* i really want this to be global */\n\n#Rightbar .box:nth-child(n+4)\n{\n\tdisplay: none;\n}",
+						"domains": [
+							"v2ex.com"
+						],
+						"regexps": [],
+						"urlPrefixes": [],
+						"urls": []
+					}
+				]
+			}
+		},
+		{
+			"id": "1538278644180",
+			"json": {
+				"enabled": true,
+				"name": "adblock: douban",
+				"url": "",
+				"updateUrl": "",
+				"sections": [
+					{
+						"code": "/* Remove ads.\n.extra: foot;\n#dale_*: float;\n*/\n\n.extra, \ndiv[id*='dale_']\n{\n\tdisplay:none;\n}",
+						"domains": [
+							"douban.com"
+						],
+						"regexps": [],
+						"urlPrefixes": [],
+						"urls": []
+					}
+				]
+			}
+		}
+	]
+}
