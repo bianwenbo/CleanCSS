@@ -9,6 +9,23 @@ Stylish can be used for this purpose through css file.
 
 Including websites:
 
-- Chinese Sites: JD, Douban, Zhihu, V2ex, Wanqu, lacker (search engine);
-- English Dictionary: Cambridge, Etymonline; 
-- Others: UserStyles, Rescuetime, Google (custom search results).
+- toggl.com
+- piaotian.com
+- google.com
+- zhihu.com
+- goodreads.com
+- inoreader.com
+- etymonline.com
+- myfitnesspal.com
+- userstyles.org
+- wanqu.co
+- cambridge.org
+- douban.com
+- jd.com
+- weibo.com
+- rescuetime.com
+- v2ex.com
+- lackar.com
+- merriam-webster.com
+
+
