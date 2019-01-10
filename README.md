@@ -1,5 +1,5 @@
 # App Configurations
-Because I have to switch between many devices (i.e. Linux, macOS, Windows, vps, NAS, etc.) and softwares (i.e. Safari, Chrome, etc.), sometimes the software need to be reconfigured as I reinstall or switch the system.
+Because I have to switch between many devices (i.e. Linux, macOS, Windows, vps, NAS, etc.) and softwares (i.e. Safari, Chrome, etc.), sometimes the software needs to be reconfigured as I reinstall or switch the system.
 
 ## SafariStylish
 Stylish CSS file for Safari on Mac OS, Mainly used for adblock.
@@ -27,5 +27,15 @@ Including websites:
 - v2ex.com
 - lackar.com
 - merriam-webster.com
+
+## Proxifier
+Converting the shadowsocks to global proxy, Proxifier can work on both windows and macOS platform.
+
+Currently rules:
+
+- Whitelist_cn;
+- adblock;
+- Manual Direct;
+- Manual Proxy.
 
 
