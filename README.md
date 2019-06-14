@@ -7,35 +7,8 @@ Stylish CSS file for Safari on Mac OS, Mainly used for adblock.
 Some adblock extensions, i.e Adblock/ABP/ublock/etc. for Safari on MacOS can not customize rules. 
 Stylish can be used for this purpose through css file.
 
-Including websites:
-
-- toggl.com
-- piaotian.com
-- google.com
-- zhihu.com
-- goodreads.com
-- inoreader.com
-- etymonline.com
-- myfitnesspal.com
-- userstyles.org
-- wanqu.co
-- cambridge.org
-- douban.com
-- jd.com
-- weibo.com
-- rescuetime.com
-- v2ex.com
-- lackar.com
-- merriam-webster.com
-
 ## Proxifier
 Converting the shadowsocks to global proxy, Proxifier can work on both windows and macOS platform.
 
-Currently rules:
-
-- Whitelist_cn;
-- adblock;
-- Manual Direct;
-- Manual Proxy.
-
-
+## tmux-config
+Avoid process termination due to remote login interruptions, used in VPS.
