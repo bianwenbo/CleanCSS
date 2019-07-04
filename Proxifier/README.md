@@ -9,3 +9,6 @@ Proxifier 能够较好的处理 MacOS 系统的网络分流问题。此外，在
 我通过 vim 简单进行了格式转换。
 
 其中IP 子网掩码批量转换脚本参见 [知乎 @包龙图 给出的 Perl 脚本](https://www.zhihu.com/question/22083486/answer/20419079)。
+
+## 白名单
+来源同上 [白名单过滤](https://raw.githubusercontent.com/h2y/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist.conf)，方法同上。
