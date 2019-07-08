@@ -1,10 +1,460 @@
 /* ==UserStyle==
-@name           UltraSimple Mode - CSS - by Bian Wenbo
-@namespace      github.com/bianwenbo/AppConfigurations
-@version        0.0.1-alpha.20190708 
-@description    Remove unnecessary elements.
-@author         Bian Wenbo
+@name         UltraSimple Mode - CSS - by Bian Wenbo
+@namespace    https://openusercss.org/theme/5d22cd6fdd60420c00008039
+@homepageURL  https://github.com/bianwenbo/AppConfigurations
+@version      0.0.1-beta.20190708
+@license      Apache-1.1
+@description  Remove unnecessary elements.
+@author       bianwenbo (https://openusercss.org/profile/5d22ccb4dd60420c00008036)
+@preprocessor uso
 ==/UserStyle== */
+@-moz-document domain("medium.com") {
+    .overlay-content,
+    .overlay--lighter {
+        display: none !important;
+    }
+
+    .metabar,
+    .u-fixed {
+        position: static !important;
+    }
+}
+@-moz-document domain("weibo.com") {
+    .WB_frame_b,
+    #pl_common_footer,
+    #WB_webim,
+    .PCD_mplayer,
+    #pl_common_top,
+    .otherlist.S_line1,
+    .W_gotop.W_gotop_v2,
+    #Pl_Official_Nav__2,
+    #Pl_Official_ProfileFeedNav__18 {
+        display: none;
+    }
+
+    .WB_frame_c {
+        width: 100%;
+    }
+
+    .W_fixed_top {
+        position: static !important;
+    }
+}
+@-moz-document domain("twitter.com") {
+    .promoted-tweet,
+    .module.Trends.trends,
+    .dashboard.dashboard-left,
+    .dashboard.dashboard-right,
+    #trends_dialog {
+        display: none;
+    }
+
+    .content-main,
+    .content-main.top-timeline-tweetbox {
+        width: auto;
+    }
+
+    .topbar.js-topbar {
+        position: static;
+    }
+}
+@-moz-document domain("mp.weixin.qq.com") {
+    #js_pc_qr_code {
+        display: none !important;
+    }
+}
+@-moz-document domain("w3schools.com") {
+    #mainLeaderboard,
+    #skyscraper,
+    #midcontentadcontainer,
+    #stickyadcontainer,
+    .bottomad {
+        display: none !important;
+    }
+}
+@-moz-document domain("merriam-webster.com") {
+    #mw-ad-slot-top,
+    .mw-ad-slot-top,
+    #recirc-bar-footer,
+    #definition-right-rail,
+    .additional-content-area,
+    .global-footer,
+    #subscribe-unabridged {
+        display: none;
+    }
+
+    #left-content {
+        width: 100%;
+        max-width: auto !important;
+    }
+}
+@-moz-document domain("hackernoon.com") {
+    .u-fixed {
+        position: static !important;
+    }
+}
+@-moz-document domain("wanqu.co") {
+    #sidebar,
+    #google_center_div,
+    .small-promo-text,
+    .text-center {
+        display: none;
+    }
+
+    .col-lg-9 {
+        width: auto;
+    }
+
+    .panel-body > .row:nth-child(6) {
+        display: none;
+    }
+}
+@-moz-document domain("v2ex.com") {
+    /* Author: BIAN
+Ref: https://github.com/stylish-userstyles/stylish/wiki
+Ref: https://www.w3schools.com/cssref/css_selectors.asp
+Ref: https://www.w3schools.com/CSSref/sel_nth-child.asp
+Ref: http://www.imooc.com/article/4849
+*/
+    /* i really want this to be global */
+    #Rightbar .box:nth-child(n+4) {
+        display: none;
+    }
+}
+@-moz-document domain("rescuetime.com") {
+    #beacon-container,
+    #rescuetime-pro-tips,
+    footer .row,
+    .large-centered {
+        display: none;
+    }
+
+    #dashboard-insight-bar,
+    #email-salutation {
+        visibility: hidden;
+    }
+
+    .large-8 {
+        width: 100%;
+    }
+
+    section#page-title-block {
+        background: white;
+    }
+}
+@-moz-document domain("piaotian.com") {
+    table,
+    .share,
+    #guild,
+    center,
+    #feit2 {
+        display: none;
+    }
+}
+@-moz-document domain("myfitnesspal.com") {
+    .ads,
+    .ad.header,
+    .column-table-cell.column-right,
+    #ember1804,
+    .ad.footer,
+    #footer-wrapper,
+    .globalTopNav-2GCw3 {
+        display: none;
+    }
+}
+@-moz-document domain("lackar.com") {
+    .hotword,
+    .foot,
+    .share,
+    .info {
+        display: none;
+    }
+}
+@-moz-document domain("goodreads.com") {
+    #premiumAdTop,
+    .googleBannerAd {
+        display: none;
+    }
+}
+@-moz-document domain("etymonline.com") {
+    .adContainer-left,
+    .adContainer-top,
+    .share-tool,
+    .alphabet--3sMXd,
+    .footer--zLQrv,
+    .desc {
+        display: none;
+    }
+}
+@-moz-document url-prefix("https://www.douban.com/people/bonnae1982/statuses") {
+    .mod.mod-usercard {
+        display: none;
+    }
+
+    #wrapper .grid-16-8 .article {
+        width: 100%;
+    }
+}
+@-moz-document domain("douban.com") {
+    /* Remove ads.
+.extra: foot;
+#dale_*: float;
+*/
+    .extra,
+    div[id*='dale_'],
+    .ad-placeholder {
+        display: none;
+    }
+
+    img {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        max-width: 150px;
+        width: expression(this.width>150?"150px":this.width);
+        max-height: 150px;
+        height: expression(this.height>150?"150px":this.height);
+    }
+}
+@-moz-document domain("cambridge.org") {
+    /* adblock */
+    #ad_topslot_b,
+    #ad_leftslot,
+    #ad_contentslot_1,
+    .cdo-tpl__z.cdo-tpl-main__z1,
+    .cdo-tpl__z.cdo-tpl-main__z3.clrd,
+    .cdo-promo,
+    #footer,
+    .share.rounded.js-share,
+    .cdo-hdr__soc.resp.resp--lrg,
+    .cdo-tpl__z.cdo-tpl-alt__z2.cdo-tpl-alt__z2--retract,
+    #ad_mpuslot,
+    .mod.mod--main.mod--border:nth-child(4),
+    #ad_btmslot_a {
+        display: none;
+    }
+
+    /* center */
+    #page-content,
+    .cdo-tpl-main__zwA {
+        width: auto;
+        align-items: center;
+    }
+
+    /* background 
+.cdo-hdr-bg,
+.cdo-hdr
+{
+	background: white;
+}
+*/
+}
+@-moz-document domain("toggl.com") {
+    #react-announcement-region {
+        display: none;
+    }
+}
+@-moz-document domain("jd.com") {
+    #J_event,
+    .fs,
+    .floors,
+    #treasure,
+    #hotwords,
+    #logo,
+    #J_mobile,
+    #banner-bg,
+    #J-detail-banner,
+    .joytop,
+    #J-global-toolbar,
+    #navitems {
+        display: none;
+    }
+}
+@-moz-document domain("google.com") {
+    .gsc-adBlock {
+        display: none;
+    }
+}
+@-moz-document domain("zhihu.com") {
+    /* Block sideColumn */
+    div.Question-sideColumn.Question-sideColumn--sticky,
+    .ContentLayout-sideColumn,
+    .GlobalSideBar {
+        display: none;
+    }
+
+    /* Adjust mainColumn */
+    .Question-mainColumn,
+    .ContentLayout-mainColumn {
+        width: 100%;
+    }
+
+    .ColumnPageHeader-Wrapper,
+    .Sticky.ColumnPageHeader,
+    /* .Sticky.RichContent-actions.is-fixed.is-bottom, */
+    .Post-SideActions {
+        position: static;
+    }
+}
+@-moz-document domain("workflowy.com") {
+    #app > div:nth-child(2) {
+        display: none !important;
+    }
+
+    /**
+.header
+{
+	position: inherit !important;
+}
+**/
+    /**span.contentUnderline **/
+    .content u {
+        background-color: #FFFF00 !important;
+        text-decoration: none !important;
+    }
+}
+@-moz-document domain("sspai.com") {
+    .fixed {
+        position: static !important;
+    }
+}
+@-moz-document domain("quora.com") {
+
+    .grid_page {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+
+    .layout_3col_left,
+    .layout_3col_right,
+    .layout_2col_side {
+        display: none;
+    }
+
+    .layout_3col_center,
+    .layout_2col_main {
+        padding: 0 !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+
+    .modal_signup_background,
+    .modal_signup_dialog,
+    .dialog_wrapper {
+        display: none !important;
+    }
+
+    /* resize Feed */
+    .ContentWrapper {
+        max-width: 800px;
+    }
+
+    /* resize Discover New Spaces */
+    .main_feed .SuggestedUsersBundle,
+    .main_feed .SuggestedTopicsBundle,
+    .main_feed .SuggestedTribesBundle {
+        width: 100%;
+    }
+
+    /* change font */
+    * {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    /* remove ad */
+    div.question_main_col > .UnifiedAnswerPagedList.PagedListFoo.unified {
+        display: none !important;
+    }
+}
+@-moz-document domain("pornhub.com") {
+    #age-verification-container,
+    #age-verification-wrapper,
+    .recommendedPornstarsWrapper,
+    .recommendedCategoriesWrapper,
+    div.wrapper + div,
+    div.sectionTitle + div,
+    div.recommendationsHiddenMessage + div,
+    #welcome,
+    .footerContentWrapper,
+    div#player + div,
+    #hd-rightColVideoPage,
+    li.adWrapper {
+        display: none !important;
+    }
+}
+@-moz-document url-prefix("https://www.codecogs.com/latex/eqneditor.php") {
+    #aswift_0_expand,
+    .footer {
+        display: none !important;
+    }
+}
+@-moz-document domain("habitica.com") {
+    .row.footer-row,
+    #app-header,
+    .currency-tray.form-inline,
+    .tasks-column.reward,
+    .dropdown-item.text-center,
+    .learn-background.py-2.text-center,
+    .grassy-meadow-backdrop,
+    .boss-section,
+    .modal-footer {
+        display: none !important;
+    }
+
+    .topbar {
+        background: #f8f9fa !important;
+        box-shadow: 0 1px 2px 0 #f8f9fa !important;
+    }
+
+    .create-task-area.d-flex {
+        top: 0px !important;
+    }
+
+    .col-lg-3 {
+        max-width: 33% !important;
+        flex: 0 0 33% !important;
+    }
+}
+@-moz-document domain("macbed.com") {
+    .col-sub,
+    .sidebar,
+    .adsbygoogle,
+    #div-gpt-ad-1462783699686-0,
+    .feed-me,
+    .ads326,
+    #aswift_2_expand,
+    .message,
+    iframe[id*='dsq-app']:nth-child(2) {
+        display: none !important;
+    }
+
+    .searchform {
+        padding-right: 0 !important;
+    }
+
+    .main-wrap {
+        margin-right: 0 !important;
+    }
+
+    .downloadlink {
+        margin-left: 0 !important;
+    }
+}
+@-moz-document domain("alternativeto.net") {
+    #div-gpt-ad-atf1,
+    #div-gpt-ad-application-linkunit,
+    .atf2,
+    .atf1,
+    #div-gpt-ad-app-sidebar-small,
+    #div-gpt-ad-sidebar1,
+    #div-gpt-ad-atf2,
+    .adsbygoogle,
+    .jumbotron.start-page-jumbotron,
+    .dark-blue,
+    body > footer {
+        display: none !important;
+    }
+}
 @-moz-document domain("zhuanlan.zhihu.com") {
     .Sticky.is-fixed {
         display: none !important;
@@ -57,8 +507,9 @@
     #sinner_container,
     #sb_rp_upgrade,
     #all_gad_57994,
-    .inno_dialog_modal_overlay,
-    .inno_dialog.inno_shadow_big.open_sans.inno_dialog_modal {
+    #rtwdnsPakpS40cVV_wrapper,
+    .inno_dialog.inno_shadow_big.open_sans.inno_dialog_modal,
+    .inno_dialog_modal_overlay {
         display: none !important;
     }
 
@@ -158,13 +609,15 @@
     #adContent,
     .recommend-box,
     #csdn-toolbar,
-    /**.tool-box,**/
-    .meau-gotop-box {
+    .tool-box,
+    .meau-gotop-box,
+    .csdn-side-toolbar {
         display: none !important;
     }
 
     .container main {
-        width: 100%;
+        width: 80%;
+        float: left;
     }
 
     body {
