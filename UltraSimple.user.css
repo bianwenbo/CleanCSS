@@ -606,7 +606,7 @@ Ref: http://www.imooc.com/article/4849
         display: none !important;
     }
 }
-@-moz-document domain("blog.csdn.cn") {
+@-moz-document domain("blog.csdn.net") {
     aside,
     .pulllog-box,
     div[id*="ad"],
