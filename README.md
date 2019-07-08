@@ -1,5 +1,13 @@
-# App Configurations
-Because I have to switch between many devices (i.e. Linux, macOS, Windows, vps, NAS, etc.) and softwares (i.e. Safari, Chrome, etc.), sometimes the software needs to be reconfigured as I reinstall or switch the system.
+# 我的软件与配置库
+
+目标：
+
+1. 在多个设备（如 Windows、MacOS、Linux，及 NAS、vps 等）间保持设置一致；
+2. 在新设备上快速恢复软件环境。
+
+## 网络
+
+- 浏览器 Browser：主力浏览器使用 Chrome，macOS 中鉴于耗电和性能因素主要使用 Safari 浏览器。
 
 ## SafariStylish
 Stylish CSS file for Safari on Mac OS, Mainly used for adblock.
