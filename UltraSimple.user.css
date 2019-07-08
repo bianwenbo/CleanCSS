@@ -295,6 +295,10 @@ Ref: http://www.imooc.com/article/4849
     .Post-SideActions {
         position: static;
     }
+    
+    .Topstory-mainColumn{
+        width: 1000px;
+    }
 }
 @-moz-document domain("workflowy.com") {
     #app > div:nth-child(2) {
