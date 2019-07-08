@@ -2,7 +2,7 @@
 @name         UltraSimple Mode - CSS - by Bian Wenbo
 @namespace    https://openusercss.org/theme/5d22cd6fdd60420c00008039
 @homepageURL  https://github.com/bianwenbo/AppConfigurations
-@version      0.0.1-beta.20190708
+@version      0.0.1-rc.20190708
 @license      Apache-1.1
 @description  Remove unnecessary elements.
 @author       bianwenbo (https://openusercss.org/profile/5d22ccb4dd60420c00008036)
@@ -279,7 +279,8 @@ Ref: http://www.imooc.com/article/4849
     /* Block sideColumn */
     div.Question-sideColumn.Question-sideColumn--sticky,
     .ContentLayout-sideColumn,
-    .GlobalSideBar {
+    .GlobalSideBar,
+    .Topstory {
         display: none;
     }
 
@@ -295,8 +296,8 @@ Ref: http://www.imooc.com/article/4849
     .Post-SideActions {
         position: static;
     }
-    
-    .Topstory-mainColumn{
+
+    .Topstory-mainColumn {
         width: 1000px;
     }
 }
