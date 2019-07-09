@@ -280,8 +280,9 @@ Ref: http://www.imooc.com/article/4849
     div.Question-sideColumn.Question-sideColumn--sticky,
     .ContentLayout-sideColumn,
     .GlobalSideBar,
-    .Topstory {
-        display: none;
+    .Topstory,
+    .Footer {
+        display: none !important;
     }
 
     /* Adjust mainColumn */
