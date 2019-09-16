@@ -19,7 +19,7 @@ Why is it hosted on Github? As both the https://userstyles.org and https://openu
 
 Install the plugin Stylus in Chrome and click on the link below: 
 
-https://github.com/bianwenbo/AppConfigurations/raw/master/UltraSimple.user.css 
+https://github.com/bianwenbo/AdBlockCSS/raw/master/UltraSimple.user.css 
 
 ## Aditional information
 
