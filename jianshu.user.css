@@ -1,15 +1,17 @@
 /* ==UserStyle==
-@name           jianshu.com Ultra Simple
+@name           jianshu.com Reading mode
 @namespace      github.com/openstyles/stylus
+@homepageURL    https://github.com/bianwenbo/AdBlockCSS/
 @version        1.0.0
-@description    A new userstyle
+@description    Jianshu Reading mode.
 @author         Bian Wenbo
+@preprocessor   Stylus
 ==/UserStyle== */
 
 @-moz-document domain("jianshu.com") {
-    /*[role=main]>div>section>div:nth-last-child(-n+3)*/ /*Normal Mode*/
-    [role=main]>div>section>div, /*Batch Reading mode*/
-    #note-page-comment,
+    /*[role=main]>div>section>div:nth-last-child(-n+3)*/ /* Normal Mode */
+    [role=main]>div>section>div, /* Batch Reading mode */
+    #note-page-comment, /* Comments */
     blockquote,
     aside,
     footer,
@@ -21,8 +23,8 @@
         display: none !important;
     }
     
-    [role=main]
+    [role=main] /* Fixed scale bug. */
     {
-        width: auto !important;
+        width: auto !important; 
     }
 }
