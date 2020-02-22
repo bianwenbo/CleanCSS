@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           jianshu.com Ultra Simple
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Bian Wenbo
+==/UserStyle== */
+
+@-moz-document domain("jianshu.com") {
+    /*[role=main]>div>section>div:nth-last-child(-n+3)*/ /*Normal Mode*/
+    [role=main]>div>section>div, /*Batch Reading mode*/
+    #note-page-comment,
+    blockquote,
+    aside,
+    footer,
+    header,
+    #note-page-comment + section,
+    footer + div,
+    [aria-label=google-ad]
+    {
+        display: none !important;
+    }
+    
+    [role=main]
+    {
+        width: auto !important;
+    }
+}
