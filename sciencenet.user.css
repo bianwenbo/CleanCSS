@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           blog.sciencenet.cn Reading mode
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    blog.sciencenet.cn Reading mode
 @author         Bian Wenbo
 ==/UserStyle== */
@@ -27,5 +27,14 @@
     BODY
     {
         background-color: transparent !important;
+        background: none !important;
+    }
+    
+    p,
+    p > span
+    {
+        background-color: white !important;
+        font-family: 华文楷体 !important;
+        font-size: 19px !important;
     }
 }
