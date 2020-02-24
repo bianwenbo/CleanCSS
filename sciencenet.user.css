@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name           blog.sciencenet.cn Reading mode
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    blog.sciencenet.cn Reading mode
+@author         Bian Wenbo
+==/UserStyle== */
+
+@-moz-document domain("blog.sciencenet.cn") {
+    .topnav,
+    #hd,
+    .sd,
+    .o.cl,
+    p.pns,
+    #ft,
+    .bm_h.cl
+    {
+        display: none !important;
+    }
+    
+    div.mn
+    {
+        float: none !important;
+        border: none !important;
+    }
+    
+    BODY
+    {
+        background-color: transparent !important;
+    }
+}
