@@ -1,0 +1,49 @@
+/* ==UserStyle==
+@name           zhihu.com - 2/27/2020, 1:38:02 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("zhihu.com") {
+    /* Block sideColumn */
+    div.Question-sideColumn.Question-sideColumn--sticky,
+    .ContentLayout-sideColumn,
+    .GlobalSideBar,
+    .Topstory,
+    .Footer {
+        display: none !important;
+    }
+
+    /* Adjust mainColumn */
+    .Question-mainColumn
+    {
+        margin:auto;
+    }
+    .ContentLayout-mainColumn {
+        width: 100%;
+    }
+
+    .ColumnPageHeader-Wrapper,
+    .Sticky.ColumnPageHeader,
+    /* .Sticky.RichContent-actions.is-fixed.is-bottom, */
+    .Post-SideActions {
+        position: static;
+    }
+
+    .Topstory-mainColumn {
+        width: 1000px;
+    }
+    
+    header
+    {
+        position: static !important;
+    }
+}
+@-moz-document domain("zhuanlan.zhihu.com") {
+    .Sticky.is-fixed
+    {
+        position: static !important;
+    }
+}
