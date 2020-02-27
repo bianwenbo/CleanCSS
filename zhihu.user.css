@@ -12,7 +12,9 @@
     .ContentLayout-sideColumn,
     .GlobalSideBar,
     .Topstory,
-    .Footer {
+    .Footer,
+    header
+    {
         display: none !important;
     }
 
