@@ -275,33 +275,6 @@ Ref: http://www.imooc.com/article/4849
         display: none;
     }
 }
-@-moz-document domain("zhihu.com") {
-    /* Block sideColumn */
-    div.Question-sideColumn.Question-sideColumn--sticky,
-    .ContentLayout-sideColumn,
-    .GlobalSideBar,
-    .Topstory,
-    .Footer {
-        display: none !important;
-    }
-
-    /* Adjust mainColumn */
-    .Question-mainColumn,
-    .ContentLayout-mainColumn {
-        width: 100%;
-    }
-
-    .ColumnPageHeader-Wrapper,
-    .Sticky.ColumnPageHeader,
-    /* .Sticky.RichContent-actions.is-fixed.is-bottom, */
-    .Post-SideActions {
-        position: static;
-    }
-
-    .Topstory-mainColumn {
-        width: 1000px;
-    }
-}
 @-moz-document domain("workflowy.com") {
     #app > div:nth-child(2) {
         display: none !important;
@@ -458,11 +431,6 @@ Ref: http://www.imooc.com/article/4849
     .jumbotron.start-page-jumbotron,
     .dark-blue,
     body > footer {
-        display: none !important;
-    }
-}
-@-moz-document domain("zhuanlan.zhihu.com") {
-    .Sticky.is-fixed {
         display: none !important;
     }
 }
