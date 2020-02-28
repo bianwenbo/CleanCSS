@@ -575,29 +575,6 @@ Ref: http://www.imooc.com/article/4849
         display: none !important;
     }
 }
-@-moz-document domain("blog.csdn.net") {
-    aside,
-    .pulllog-box,
-    div[id*="ad"],
-    div[id*="kp_box"],
-    #adContent,
-    .recommend-box,
-    #csdn-toolbar,
-    .tool-box,
-    .meau-gotop-box,
-    .csdn-side-toolbar {
-        display: none !important;
-    }
-
-    .container main {
-        width: 80%;
-        float: left;
-    }
-
-    body {
-        background: none !important;
-    }
-}
 @-moz-document domain("userstyles.org") {
     .adContainer,
     .fallbackDiv,
