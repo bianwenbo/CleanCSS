@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           blog.csdn.net Reading mode
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    blog.csdn.net Reading mode
 @author         Bian Wenbo
 ==/UserStyle== */
@@ -17,7 +17,9 @@
     .tool-box,
     .meau-gotop-box,
     .csdn-side-toolbar,
-    .template-box
+    .template-box,
+    .jiathis_style,
+    #passportbox, .login-mark
     {
         display: none !important;
     }
@@ -29,5 +31,6 @@
 
     body {
         background: none !important;
+        min-width: auto !important;
     }
 }
