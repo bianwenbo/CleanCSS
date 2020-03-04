@@ -1,0 +1,44 @@
+/* ==UserStyle==
+@name           inoreader.com Reading mode
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Bian Wenbo
+==/UserStyle== */
+
+@-moz-document domain("inoreader.com") {
+    .leaderboard_ad,
+    .ad_title.ad_title_centered,
+    #sinner_container,
+    #sb_rp_upgrade,
+    #all_gad_57994,
+    #rtwdnsPakpS40cVV_wrapper,
+    .inno_dialog.inno_shadow_big.open_sans.inno_dialog_modal,
+    .inno_dialog_modal_overlay,
+    #subscriptions_nav_below
+    {
+        display: none !important;
+    }
+
+    #reader_pane.reader_pane_sinner {
+        padding-right: 0px;
+    }
+
+    .article_content {
+        max-width: 800px !important;
+    }
+
+    #sb_rp_gear
+    {
+	    right: 0px !important;
+    }
+    #sb_rp_notifications
+    {
+	    right: 48px !important;
+    }
+    #sb_rp_tools
+    {
+	    right: 88px !important;
+    }
+
+}
