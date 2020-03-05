@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name           cnblogs.com Reading mode
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Bian Wenbo
+==/UserStyle== */
+
+@-moz-document domain("cnblogs.com") {
+    #sideBar,
+    #ad_text_under_commentbox,
+    #ad_t2,
+    #footer,
+    #blog_post_info,
+    #comment_form,
+    #header
+    {
+        display: none !important;
+    }
+    #mainContent
+    {
+        margin:auto !important;
+        float:none !important;
+    }
+    #home
+    {
+        width: auto !important;
+    }
+}
