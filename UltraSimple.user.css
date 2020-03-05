@@ -19,27 +19,6 @@
         position: static !important;
     }
 }
-@-moz-document domain("weibo.com") {
-    .WB_frame_b,
-    #pl_common_footer,
-    #WB_webim,
-    .PCD_mplayer,
-    #pl_common_top,
-    .otherlist.S_line1,
-    .W_gotop.W_gotop_v2,
-    #Pl_Official_Nav__2,
-    #Pl_Official_ProfileFeedNav__18 {
-        display: none;
-    }
-
-    .WB_frame_c {
-        width: 100%;
-    }
-
-    .W_fixed_top {
-        position: static !important;
-    }
-}
 @-moz-document domain("twitter.com") {
     .promoted-tweet,
     .module.Trends.trends,
