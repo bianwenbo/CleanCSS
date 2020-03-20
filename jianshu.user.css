@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           jianshu.com Reading mode
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Jianshu Reading mode.
 @author         Bian Wenbo
 ==/UserStyle== */
@@ -10,7 +10,7 @@
     [role=main]>div>section>div:nth-last-child(-n+3), /* Normal Mode */
     /*[role=main]>div>section>div,*/ /* Batch Reading mode */
     #note-page-comment, /* Comments */
-    blockquote,
+    /*blockquote,*/
     aside,
     footer,
     header,
