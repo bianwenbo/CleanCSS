@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           juejin.im Reading mode
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Bian Wenbo
+==/UserStyle== */
+
+@-moz-document domain("juejin.im") {
+    .recommend-box,
+    .index-book-collect,
+    .request-health-alert,
+    .related-entry-sidebar-block > *,
+    .meiqia-btn,
+    .article-banner,
+    blockquote,
+    .footer-author-block,
+    .article-suspended-panel,
+    .author-block
+    {
+        display: none !important;
+    }
+    
+    .main-header
+    {
+        position: static !important;
+    }
+}
