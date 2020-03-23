@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           blog.csdn.net Reading mode
 @namespace      github.com/openstyles/stylus
-@version        2.1.1
+@version        2.1.2
 @homepageURL	https://github.com/bianwenbo/AdBlockCSS/
 @updateURL		https://raw.githubusercontent.com/bianwenbo/AdBlockCSS/master/csdn.net.css
 @description    blog.csdn.net Reading mode
@@ -22,7 +22,7 @@ aside, 				/* saidbar left */
 .tool-box, .csdn-side-toolbar,			/* saidbar right: toolbox */
 .recommend-box,		/* recommned articles */
 .template-box,		/* footer */
-.login-mark, #passportbox			/* login QR code */
+.login-mark, #passportbox,			/* login QR code */
 main > div[id*="ad"]        /* Remove ads */
 {
 	display: none !important;
