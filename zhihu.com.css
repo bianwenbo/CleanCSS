@@ -1,11 +1,12 @@
 /* ==UserStyle==
 @name           zhihu.com Reading mode
 @namespace      github.com/openstyles/stylus
-@version        2.0.0
+@version        2.0.1
 @description    Zhihu.com Reading mode.
 @author         Bian Wenbo
 ==/UserStyle== */
 
+@-moz-document domain("www.zhihu.com") {
 /* Hide the Topstory section in home page. */
 .Topstory {
     display: none;
@@ -66,4 +67,5 @@ div[data-zop-question] {
 }
 .QuestionHeader-main.QuestionHeader-footer-main {
     padding-left: 5px;
+}
 }
