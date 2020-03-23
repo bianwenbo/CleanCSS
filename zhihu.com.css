@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           zhihu.com Reading mode
 @namespace      github.com/openstyles/stylus
-@version        2.0.2
+@version        2.0.3
 @description    Zhihu.com Reading mode.
 @author         Bian Wenbo
 ==/UserStyle== */
@@ -29,6 +29,9 @@ div.Question-sideColumn.Question-sideColumn--sticky {
 }
 .Question-main {
     width: auto;
+}
+.Question-mainColumn {
+	margin: 0 auto;
 }
 /* Hide the Header */
 header {
