@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           inoreader.com Reading mode
 @namespace      github.com/openstyles/stylus
-@version        2.0.0
+@version        2.0.1
 @description    Rewrite: Modelization.
 @author         Bian Wenbo
 ==/UserStyle== */
@@ -69,8 +69,9 @@
     .inno_toolbar_switcher_button {
         padding: 0 12px;
     }
-    #sb_reading_part {
-        box-shadow: none;
+    #sb_reading_part,
+    #sb_tree_part {
+        box-shadow: none !important;
     }
     #sb_rp_tools {
         background-color: none;
