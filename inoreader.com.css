@@ -1,44 +1,79 @@
 /* ==UserStyle==
 @name           inoreader.com Reading mode
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
-@description    A new userstyle
+@version        2.0.0
+@description    Rewrite: Modelization.
 @author         Bian Wenbo
 ==/UserStyle== */
 
 @-moz-document domain("inoreader.com") {
-    .leaderboard_ad,
-    .ad_title.ad_title_centered,
-    #sinner_container,
-    #sb_rp_upgrade,
+    /* Remove Ads */
+    .leaderboard_ad, .ad_title.ad_title_centered, #sinner_container {
+        display: none !important;
+    }
+    /* Remove upgrade info. */
+    #sb_rp_gear { right: 0px !important; } 
+    #sb_rp_notifications { right: 48px !important; }
+    #sb_rp_tools { right: 88px !important; }
+    #reader_pane.reader_pane_sinner { padding-right: 0px; } /* Fixed article content width. */
+    #sb_rp_upgrade, #subscriptions_nav_below {
+        display: none !important;
+    }
+    /* Remove useless elements. */
     #all_gad_57994,
     #rtwdnsPakpS40cVV_wrapper,
     .inno_dialog.inno_shadow_big.open_sans.inno_dialog_modal,
-    .inno_dialog_modal_overlay,
-    #subscriptions_nav_below
-    {
+    .inno_dialog_modal_overlay {
         display: none !important;
     }
-
-    #reader_pane.reader_pane_sinner {
-        padding-right: 0px;
+    /* Minimize the float article footer. */
+    .article_footer {
+        padding: 5px 0;
     }
-
-    .article_content {
-        max-width: 800px !important;
+    /* Minimize the header. [BEGIN] */
+    #subscriptions_buttons, 
+    #sb_tree_part, 
+    #sb_tp_search_overlay, 
+    #feed_searcher, 
+    #sb_rp_tools,
+    .inno_toolbar_spacer,
+    .inno_toolbar_switcher {
+        height: 24px;
     }
-
-    #sb_rp_gear
-    {
-	    right: 0px !important;
+    .inno_toolbar_button, 
+    #sb_rp_ribbon,
+    .inno_toolbar_rp_heading,
+    #sb_rp_mark_read,
+    #sb_rp_mark_read_menu {
+        height: 24px;
+        line-height: 24px;
     }
-    #sb_rp_notifications
-    {
-	    right: 48px !important;
+    #feed_searcher {
+        margin: 0 0;
     }
-    #sb_rp_tools
-    {
-	    right: 88px !important;
+    #sb_rp_mark_read,
+    .inno_toolbar_switcher,
+    #sb_rp_settings img {
+        margin-top: 0;
     }
-
+    #sb_rp_mark_read_menu {
+        margin-top: 3px;
+    }
+    .inno_toolbar_switcher_button_main_label {
+        top: 0;
+    }
+    #sb_rp_mark_read span.icon16,
+    .sb_rp_mark_read_menu_divider {
+        top: 4px;
+    }
+    .inno_toolbar_switcher_button {
+        padding: 0 12px;
+    }
+    #sb_reading_part {
+        box-shadow: none;
+    }
+    #sb_rp_tools {
+        background-color: none;
+    }
+    /* Minimize the header. [END] */
 }
