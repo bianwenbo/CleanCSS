@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           workflowy.com Reading mode
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.1.1
 @homepageURL	https://github.com/bianwenbo/AdBlockCSS/
 @updateURL		https://raw.githubusercontent.com/bianwenbo/AdBlockCSS/master/workflowy.com.css
 @description    workflowy.com Reading mode
@@ -10,50 +10,57 @@
 
 @-moz-document domain("workflowy.com") {
 /* Static the header 
-.header {
+div[class^="header"] {
 	position: absolute;
 }*/
 /* Minimize the header */
-.header,
-.header > div,
-.searchBox,
-#srch-input,
-.menu.gearMenu > div
-{
+div[class^="header"],
+div[class^="header"] > div,
+label[class^="searchBox"],
+#srch-input {
 	height: 24px;
 }
-.header > div:first-child > div{
+div[class^="breadcrumbs"] > a {
+	height: 24px;
+    line-height: 24px;
+}
+
+div[class^="header"] > div:first-child > div,
+div[class*="gearMenu"] > div {
 	height: 24px;
 	width: 24px;
 }
-#srch-input + svg {
-	top: 7px;
+#srch-input + svg[height="12"] {
+    top: 6px;
 }
-.header + div {
+#srch-input + svg[height="20"] {
+    top: 2px;
+}
+div[class^="header"] + div {
 	top: 24px;
 }
-.pageContainer > div:first-child {
+div[class^="pageContainer"] > div:first-child {
 	margin-top: 48px;
 }
 /* Minimize the footer reminder. */
-.pageContainer > div:last-child {
+div[class^="pageContainer"] > div:last-child {
 	border-top: 0;
 	padding: 1px 0;
 }
-.pageContainer > div:last-child > div:first-child {
+div[class^="pageContainer"] > div:last-child > div:first-child {
 	margin-bottom: 3px;
 }
-.pageContainer > div:last-child > div:first-child > button {
+div[class^="pageContainer"] > div:last-child > div:first-child > button {
 	display: none;
 }
-.pageContainer > div:last-child > div:last-child {
+div[class^="pageContainer"] > div:last-child > div:last-child {
 	height: 3px
 }
 /* Remove the nodes limit. FAILED: keyboard shortcut failed.
 #app > div:nth-child(5) ~ div  {
 	display: none;
 }
-.pageContainer > div:last-child {
+div[class^="pageContainer"] > div:last-child {
 	display: none;
 }
 element.style,
