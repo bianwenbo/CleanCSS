@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cnblogs.com Reading mode
 @namespace      github.com/openstyles/stylus
-@version        1.0.4
+@version        1.0.5
 @description    A new userstyle
 @author         Bian Wenbo
 ==/UserStyle== */
@@ -32,9 +32,10 @@
         margin-right:auto !important;
         width: 730px !important;
     }
-    .postBody
-    {
-        padding:5px 5px 5px 5px !important;
-        margin: auto 15px;
+    /* Fixed the out of bounder problem. */
+    .post {
+        width: 98%;
     }
+    .feedbackCon {
+        margin-right: 30px;
 }
