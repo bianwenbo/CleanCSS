@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           workflowy.com Reading mode
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @homepageURL	https://github.com/bianwenbo/AdBlockCSS/
 @updateURL		https://raw.githubusercontent.com/bianwenbo/AdBlockCSS/master/workflowy.com.css
 @description    workflowy.com Reading mode
@@ -22,11 +22,18 @@
 {
 	height: 24px;
 }
+.header > div:first-child > div{
+	height: 24px;
+	width: 24px;
+}
 #srch-input + svg {
 	top: 7px;
 }
 .header + div {
 	top: 24px;
+}
+.pageContainer > div:first-child {
+	margin-top: 48px;
 }
 /* Minimize the footer reminder. */
 .pageContainer > div:last-child {
