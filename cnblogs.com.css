@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cnblogs.com Reading mode
 @namespace      github.com/openstyles/stylus
-@version        1.0.3
+@version        1.0.4
 @description    A new userstyle
 @author         Bian Wenbo
 ==/UserStyle== */
@@ -35,5 +35,6 @@
     .postBody
     {
         padding:5px 5px 5px 5px !important;
+        margin: auto 15px;
     }
 }
