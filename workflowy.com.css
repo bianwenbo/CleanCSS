@@ -46,6 +46,7 @@ div[class^="pageContainer"] > div:first-child {
 div[class^="pageContainer"] > div:last-child {
 	border-top: 0;
 	padding: 1px 0;
+    width: auto;
 }
 div[class^="pageContainer"] > div:last-child > div:first-child {
 	margin-bottom: 3px;
