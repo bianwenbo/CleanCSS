@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           blog.csdn.net Reading mode
 @namespace      github.com/openstyles/stylus
-@version        2.1.2
+@version        2.1.3
 @homepageURL	https://github.com/bianwenbo/AdBlockCSS/
 @updateURL		https://raw.githubusercontent.com/bianwenbo/AdBlockCSS/master/csdn.net.css
 @description    blog.csdn.net Reading mode
@@ -19,7 +19,7 @@ div[id*="kp_box"],
 /* Hide useless elements. */
 aside, 				/* saidbar left */
 #csdn-toolbar, 		/* header */
-.tool-box, .csdn-side-toolbar,			/* saidbar right: toolbox */
+.recommend-right, .tool-box, .csdn-side-toolbar,			/* saidbar right: toolbox */
 .recommend-box,		/* recommned articles */
 .template-box,		/* footer */
 .login-mark, #passportbox,			/* login QR code */
@@ -28,9 +28,13 @@ main > div[id*="ad"]        /* Remove ads */
 	display: none !important;
 }
 /* layout: center content. */
-.container main {
+.space_container ~ main {
 	margin: auto;
 	float: none;
+}
+.container#mainBox {
+	margin: auto !important;
+	width: auto !important;
 }
 /* Remove background. */
 body {

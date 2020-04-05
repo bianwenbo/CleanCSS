@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           zhihu.com Reading mode
 @namespace      github.com/openstyles/stylus
-@version        2.0.3
+@version        2.0.4
 @description    Zhihu.com Reading mode.
 @author         Bian Wenbo
 ==/UserStyle== */
@@ -18,6 +18,10 @@
 /* Hide the side column. */
 div.Question-sideColumn.Question-sideColumn--sticky { 
      display: none !important; 
+}
+/* Fixed: Topic Sidebar*/
+.TopicSideBar > div > div:first-child {
+     top: 10px !important;
 }
 /* Hide the footer. */
 .Footer { 
