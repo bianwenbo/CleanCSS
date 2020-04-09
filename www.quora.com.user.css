@@ -1,0 +1,30 @@
+/* ==UserStyle==
+@name           quora.com Reading mode
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Quora.com Reading mode.
+@author         Bian Wenbo
+==/UserStyle== */
+
+@-moz-document domain("www.quora.com")
+{
+	/* Sidebar: hide */
+	#root > div > div > div:last-child > div > div > div:last-child {
+		display: none;
+	}
+	#root > div > div > div:last-child > div > div > div:first-child {
+        width: 70% !important;
+        margin: auto;
+	}
+	/* Header: static */
+	#root > div > div > div:nth-child(2) {
+		position: static !important;
+	}
+	#root > div > div > div:first-child {
+		display: none;
+	}
+	/* Remove ads */
+	.spacing_log_question_page_ad {
+		display: none;
+	}
+}
