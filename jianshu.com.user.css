@@ -1,28 +1,31 @@
 /* ==UserStyle==
-@name           jianshu.com Reading mode
-@namespace      github.com/openstyles/stylus
-@version        1.0.1
-@description    Jianshu Reading mode.
-@author         Bian Wenbo
+@name			jianshu.com
+@author			Bian Wenbo
+@version		1.0.3
+@namespace		bianwenbo
+@preprocessor	default
 ==/UserStyle== */
 
-@-moz-document domain("jianshu.com") {
-    [role=main]>div>section>div:nth-last-child(-n+3), /* Normal Mode */
-    /*[role=main]>div>section>div,*/ /* Batch Reading mode */
-    #note-page-comment, /* Comments */
-    /*blockquote,*/
-    aside,
-    footer,
-    header,
-    #note-page-comment + section,
-    footer + div,
-    [aria-label=google-ad]
-    {
-        display: none !important;
-    }
-    
-    [role=main] /* Fixed scale bug. */
-    {
-        width: auto !important; 
-    }
+@-moz-document domain("jianshu.com")
+{
+	/* Normal Mode */
+	[role=main]>div>section>div:nth-last-child(-n+3),
+	/* Alternative: Batch Reading mode */
+	/*[role=main]>div>section>div,*/
+	/* Comments */
+	#note-page-comment,
+	/*blockquote,*/
+	aside,
+	footer,
+	header,
+	#note-page-comment+section,
+	footer+div,
+	[aria-label=google-ad] {
+		display: none !important;
+	}
+	
+	/* Fixed scale bug. */
+	[role=main] {
+		width: auto !important;
+	}
 }
