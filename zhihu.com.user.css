@@ -80,3 +80,17 @@ div[data-zop-question] {
     padding-left: 5px;
 }
 }
+@-moz-document domain("zhuanlan.zhihu.com") {
+    /* Hide the header, footer, and sidebar. */
+    .ColumnPageHeader,
+    .RichContent-actions,
+    .Post-SideActions {
+        position: static !important;
+    }
+    /* Hide the useless elements. */
+    .Sticky--holder,
+    .CornerButtons,
+    .Recommendations-Main {
+        display: none !important;
+    }
+}
