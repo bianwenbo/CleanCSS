@@ -7,4 +7,4 @@
 ## 使用
 
 - 使用 Stylus (Chromium) 或者 Cascadea (Safari) 等软件：直接打开文件的 raw 格式即可；
-- 使用 PageExtender (macOS)：同步并监控项目文件夹。
+- ~~使用 PageExtender (macOS)：同步并监控项目文件夹。~~
