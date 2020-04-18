@@ -1,33 +1,31 @@
 /* ==UserStyle==
-@name           juejin.im Reading mode
-@namespace      github.com/openstyles/stylus
-@version        1.0.1
-@description    A new userstyle
-@author         Bian Wenbo
+@name			juejin.im
+@author			Bian Wenbo
+@version		1.0.2
+@namespace		bianwenbo
+@preprocessor	default
 ==/UserStyle== */
 
-@-moz-document domain("juejin.im") {
-    .recommend-box,
-    .index-book-collect,
-    .request-health-alert,
-    .related-entry-sidebar-block > *,
-    .meiqia-btn,
-    .article-banner,
-    blockquote,
-    .footer-author-block,
-    .article-suspended-panel,
-    .author-block
-    {
-        display: none !important;
-    }
-    
-    .main-header
-    {
-        position: static !important;
-    }
-    
-    .sticky-block-box
-    {
-        top: 15rem !important;
-    }
+@-moz-document domain("juejin.im")
+{
+	.recommend-box,
+	.index-book-collect,
+	.request-health-alert,
+	.related-entry-sidebar-block>*,
+	.meiqia-btn,
+	.article-banner,
+	blockquote,
+	.footer-author-block,
+	.article-suspended-panel,
+	.author-block {
+		display: none !important;
+	}
+	
+	.main-header {
+		position: static !important;
+	}
+	
+	.sticky-block-box {
+		top: 15rem !important;
+	}
 }

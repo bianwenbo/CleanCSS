@@ -1,96 +1,117 @@
 /* ==UserStyle==
-@name           zhihu.com Reading mode
-@namespace      github.com/openstyles/stylus
-@version        2.0.5
-@description    Zhihu.com Reading mode.
-@author         Bian Wenbo
+@name			zhihu.com
+@author			Bian Wenbo
+@version		2.0.6
+@namespace		bianwenbo
+@preprocessor	default
 ==/UserStyle== */
 
-@-moz-document domain("www.zhihu.com") {
-/* Hide the Topstory section in home page. */
-.Topstory {
-    display: none;
+@-moz-document domain("www.zhihu.com")
+{
+	/* Hide the Topstory section in home page. */
+	.Topstory {
+		display: none;
+	}
+	
+	/* Hide the useless elements. */
+	.CornerButtons {
+		display: none;
+	}
+	
+	/* Hide the side column. */
+	div.Question-sideColumn.Question-sideColumn--sticky {
+		display: none !important;
+	}
+	
+	/* Fixed: Topic Sidebar*/
+	.TopicSideBar>div>div:first-child {
+		top: 10px !important;
+		left: auto !important;
+	}
+	
+	/* Hide the footer. */
+	.Footer {
+		display: none !important;
+	}
+	
+	/* Center: Main content */
+	.ListShortcut {
+		margin: 0 auto;
+	}
+	
+	.Question-main {
+		width: auto;
+	}
+	
+	.Question-mainColumn {
+		margin: 0 auto;
+	}
+	
+	/* Hide the Header */
+	header {
+		/*position: static !important;*/
+		display: none !important;
+	}
+	
+	header+div {
+		display: none !important;
+	}
+	
+	/* Minimize the answer action. */
+	.ContentItem-actions {
+		padding: 0 0;
+		left: auto !important;
+		width: 654px !important;
+		margin: 0 0 !important;
+	}
+	
+	/* Minize the question header. */
+	div[data-zop-question] {
+		width: 694px;
+		margin: 0 auto;
+	}
+	
+	.QuestionHeader-side {
+		display: none;
+	}
+	
+	.QuestionHeader {
+		min-width: auto;
+	}
+	
+	.QuestionHeader-content {
+		width: auto;
+	}
+	
+	/* Minimize the quesition action. */
+	.QuestionHeader-footer.is-fixed {
+		height: auto;
+		left: auto !important;
+	}
+	
+	.QuestionHeader-footer-inner {
+		padding: 0 0;
+		width: auto;
+	}
+	
+	.QuestionHeader-main.QuestionHeader-footer-main {
+		padding-left: 5px;
+	}
 }
-/* Hide the useless elements. */
-.CornerButtons {
-    display: none;
-}
-/* Hide the side column. */
-div.Question-sideColumn.Question-sideColumn--sticky { 
-     display: none !important; 
-}
-/* Fixed: Topic Sidebar*/
-.TopicSideBar > div > div:first-child {
-     top: 10px !important;
-     left: auto !important;
-}
-/* Hide the footer. */
-.Footer { 
-     display: none !important; 
-}
-/* Center: Main content */
-.ListShortcut {
-    margin:0 auto;
-}
-.Question-main {
-    width: auto;
-}
-.Question-mainColumn {
-	margin: 0 auto;
-}
-/* Hide the Header */
-header {
-    /*position: static !important;*/
-    display: none !important; 
-}
-header + div {
-    display: none !important;
-}
-/* Minimize the answer action. */
-.ContentItem-actions {
-    padding: 0 0;
-    left: auto !important;
-    width: 654px !important; 
-    margin: 0 0 !important;
-}
-/* Minize the question header. */
-div[data-zop-question] {
-    width: 694px;
-    margin:0 auto;
-}
-.QuestionHeader-side {
-    display: none;
-}
-.QuestionHeader {
-    min-width: auto;
-}
-.QuestionHeader-content {
-    width: auto;
-}
-/* Minimize the quesition action. */
-.QuestionHeader-footer.is-fixed {
-    height: auto;
-    left: auto !important;
-}
-.QuestionHeader-footer-inner {
-    padding: 0 0;
-    width: auto;
-}
-.QuestionHeader-main.QuestionHeader-footer-main {
-    padding-left: 5px;
-}
-}
-@-moz-document domain("zhuanlan.zhihu.com") {
-    /* Hide the header, footer, and sidebar. */
-    .ColumnPageHeader,
-    .RichContent-actions,
-    .Post-SideActions {
-        position: static !important;
-    }
-    /* Hide the useless elements. */
-    .Sticky--holder,
-    .CornerButtons,
-    .Recommendations-Main {
-        display: none !important;
-    }
+
+@-moz-document domain("zhuanlan.zhihu.com")
+{
+	/* Hide the header, footer, and sidebar. */
+	.ColumnPageHeader,
+	.RichContent-actions,
+	.Post-SideActions {
+		position: static !important;
+	}
+	
+	/* Hide the useless elements. */
+	.Sticky--holder,
+	.CornerButtons,
+	.Recommendations-Main {
+		display: none !important;
+	}
 }

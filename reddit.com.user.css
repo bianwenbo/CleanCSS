@@ -1,45 +1,52 @@
 /* ==UserStyle==
-@name           reddit.com Reading mode
-@namespace      github.com/openstyles/stylus
-@version        1.1.0
-@homepageURL	https://github.com/bianwenbo/AdBlockCSS/
-@updateURL		https://raw.githubusercontent.com/bianwenbo/AdBlockCSS/master/reddit.com.css
-@description    reddit.com Reading mode
-@author         Bian Wenbo
+@name			reddit.com
+@author			Bian Wenbo
+@version		1.1.1
+@namespace		bianwenbo
+@preprocessor	default
 ==/UserStyle== */
 
-@-moz-document domain("reddit.com") {
-/* Static: header */
-body > div > div > div > div > div:nth-child(2) > header {
-	/*display: none;*/ /* Hide header */
-	position: static; 
-	width: 100%;
-}
-/* Hide: background */
-body > div > div > div > div > div:nth-child(4) > div:first-child > div:nth-child(1) {
-	display: none;
-}
-/* Hide: fixed title */
-body > div > div > div > div > div:nth-child(4) > div:first-child > div:nth-child(2) {
-	display: none;
-}
-/* Hide: More posts from the community */
-/* Note: The option display:none cause blank page on macOS Safari. */
-body > div > div > div > div > div:nth-child(4) > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(3) {
-    height: 1px;
-    visibility: hidden;
-}
-/* Hide the white space */
-body > div > div > div > div > div:nth-child(4) > div:first-child {
-	margin-top: 0;
-}
-body > div > div > div > div > div:nth-child(4) > div:first-child > div:nth-child(3) {
-	margin: 0 auto;
-}
-body > div > div > div > div > div:nth-child(4) > div:first-child > div:nth-child(3) > div {
-	padding-top: 0;
-}
-body > div > div > div > div > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div:first-child > div:nth-child(2) {
-	display: none;
-}
+@-moz-document domain("reddit.com")
+{
+	/* Static: header */
+	body>div>div>div>div>div:nth-child(2)>header {
+		/* Hide header */
+		/*display: none;*/
+		position: static;
+		width: 100%;
+	}
+	
+	/* Hide: background */
+	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(1) {
+		display: none;
+	}
+	
+	/* Hide: fixed title */
+	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(2) {
+		display: none;
+	}
+	
+	/* Hide: More posts from the community */
+	/* Note: The option display:none cause blank page on macOS Safari. */
+	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(3)>div:first-child>div:nth-child(3) {
+		height: 1px;
+		visibility: hidden;
+	}
+	
+	/* Hide the white space */
+	body>div>div>div>div>div:nth-child(4)>div:first-child {
+		margin-top: 0;
+	}
+	
+	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(3) {
+		margin: 0 auto;
+	}
+	
+	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(3)>div {
+		padding-top: 0;
+	}
+	
+	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(3)>div:nth-child(2)>div:first-child>div:nth-child(2) {
+		display: none;
+	}
 }

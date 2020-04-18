@@ -1,40 +1,37 @@
 /* ==UserStyle==
-@name           blog.sciencenet.cn Reading mode
-@namespace      github.com/openstyles/stylus
-@version        1.0.1
-@description    blog.sciencenet.cn Reading mode
-@author         Bian Wenbo
+@name			sciencenet.cn
+@author			Bian Wenbo
+@version		1.0.1
+@namespace		bianwenbo
+@preprocessor	default
 ==/UserStyle== */
 
-@-moz-document domain("blog.sciencenet.cn") {
-    .topnav,
-    #hd,
-    .sd,
-    .o.cl,
-    p.pns,
-    #ft,
-    .bm_h.cl
-    {
-        display: none !important;
-    }
-    
-    div.mn
-    {
-        float: none !important;
-        border: none !important;
-    }
-    
-    BODY
-    {
-        background-color: transparent !important;
-        background: none !important;
-    }
-    
-    p,
-    p > span
-    {
-        background-color: white !important;
-        font-family: 华文楷体 !important;
-        font-size: 19px !important;
-    }
+@-moz-document domain("blog.sciencenet.cn")
+{
+	.topnav,
+	#hd,
+	.sd,
+	.o.cl,
+	p.pns,
+	#ft,
+	.bm_h.cl {
+		display: none !important;
+	}
+	
+	div.mn {
+		float: none !important;
+		border: none !important;
+	}
+	
+	BODY {
+		background-color: transparent !important;
+		background: none !important;
+	}
+	
+	p,
+	p>span {
+		background-color: white !important;
+		font-family: 华文楷体 !important;
+		font-size: 19px !important;
+	}
 }

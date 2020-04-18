@@ -1,44 +1,53 @@
 /* ==UserStyle==
-@name           csdn.net Reading mode
-@namespace      github.com/openstyles/stylus
-@version        2.1.4
-@homepageURL	https://github.com/bianwenbo/AdBlockCSS/
-@updateURL	https://raw.githubusercontent.com/bianwenbo/AdBlockCSS/master/csdn.net.user.css
-@description    blog.csdn.net Reading mode
-@author         Bian Wenbo
+@name			csdn.net
+@author			Bian Wenbo
+@version		2.1.5
+@namespace		bianwenbo
+@preprocessor	default
 ==/UserStyle== */
 
-@-moz-document domain("blog.csdn.net") {
-/* unknown NONE
-.pulllog-box,
-div[id*="kp_box"],
-#adContent,
-.meau-gotop-box,
-.jiathis_style,
-*/
-/* Hide useless elements. */
-aside, 				/* saidbar left */
-#csdn-toolbar, 		/* header */
-.recommend-right, .tool-box, .csdn-side-toolbar,			/* saidbar right: toolbox */
-.recommend-box,		/* recommned articles */
-.template-box,		/* footer */
-.login-mark, #passportbox,			/* login QR code */
-main > div[id*="ad"]        /* Remove ads */
+@-moz-document domain("blog.csdn.net")
 {
-	display: none !important;
-}
-/* layout: center content. */
-.space_container ~ main {
-	margin: auto;
-	float: none;
-}
-.container#mainBox {
-	margin: auto !important;
-	width: auto !important;
-}
-/* Remove background. */
-body {
-	background: none !important;
-	min-width: auto !important;
-}
+	/* unknown NONE
+	.pulllog-box,
+	div[id*="kp_box"],
+	#adContent,
+	.meau-gotop-box,
+	.jiathis_style,
+	*/
+	
+	/* Hide useless elements. */
+	/* saidbar left */
+	aside,
+	/* header */
+	#csdn-toolbar,
+	/* saidbar right: toolbox */
+	.recommend-right, .tool-box, .csdn-side-toolbar,
+	/* recommned articles */
+	.recommend-box,
+	/* footer */
+	.template-box,
+	/* login QR code */
+	.login-mark, #passportbox,
+	/* Remove ads */
+	main>div[id*="ad"] {
+		display: none !important;
+	}
+	
+	/* layout: center content. */
+	.space_container~main {
+		margin: auto;
+		float: none;
+	}
+	
+	.container#mainBox {
+		margin: auto !important;
+		width: auto !important;
+	}
+	
+	/* Remove background. */
+	body {
+		background: none !important;
+		min-width: auto !important;
+	}
 }

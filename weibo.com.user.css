@@ -1,38 +1,36 @@
 /* ==UserStyle==
-@name           weibo.com Reading mode
-@namespace      github.com/openstyles/stylus
-@version        1.0.1
-@description    Additional: https://tiansh.github.io/yawf/
-@author         Bian Wenbo
+@name			weibo.com
+@author			Bian Wenbo
+@version		1.0.1
+@namespace		bianwenbo
+@preprocessor	default
 ==/UserStyle== */
 
-@-moz-document domain("weibo.com") {
-    .WB_frame_b,
-    #pl_common_footer,
-    #WB_webim,
-    .PCD_mplayer,
-    #pl_common_top,
-    .otherlist.S_line1,
-    .W_gotop.W_gotop_v2,
-    #Pl_Official_Nav__2,
-    #Pl_Official_ProfileFeedNav__18,
-    #WB_webchat,
-    .W_tips.tips_warn
-    {
-        display: none;
-    }
-
-    #plc_main > .WB_frame_c 
-    {
-        width: 100% !important;
-    }
-
-    .W_fixed_top {
-        position: static !important;
-    }
-    
-    body
-    {
-        background-image: none !important;
-    }
+@-moz-document domain("weibo.com")
+{
+	.WB_frame_b,
+	#pl_common_footer,
+	#WB_webim,
+	.PCD_mplayer,
+	#pl_common_top,
+	.otherlist.S_line1,
+	.W_gotop.W_gotop_v2,
+	#Pl_Official_Nav__2,
+	#Pl_Official_ProfileFeedNav__18,
+	#WB_webchat,
+	.W_tips.tips_warn {
+		display: none;
+	}
+	
+	#plc_main>.WB_frame_c {
+		width: 100% !important;
+	}
+	
+	.W_fixed_top {
+		position: static !important;
+	}
+	
+	body {
+		background-image: none !important;
+	}
 }
