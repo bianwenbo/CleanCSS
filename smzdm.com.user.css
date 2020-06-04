@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			smzdm.com
 @author			Bian Wenbo
-@version		2.0.0
+@version		2.0.1
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
@@ -47,7 +47,8 @@
 	.content-inner,
 	.wrap,
 	#global-search .search-inner,
-	#global-nav .nav-inner{
+	#global-nav .nav-inner, 
+	#global-search.mini-bar .search-inner {
 		width: inherit;
 	}
 	.z-stuff-bar-footer {
