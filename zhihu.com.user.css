@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			zhihu.com
 @author			Bian Wenbo
-@version		2.0.6
+@version		2.0.7
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
@@ -113,5 +113,10 @@
 	.CornerButtons,
 	.Recommendations-Main {
 		display: none !important;
+	}
+	/* Correct width for vertical screen. */
+	.Post-content
+	{
+		min-width: 690px;
 	}
 }
