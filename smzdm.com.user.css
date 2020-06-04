@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			smzdm.com
 @author			Bian Wenbo
-@version		2.0.1
+@version		2.1.1
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
@@ -14,12 +14,14 @@
 	}
 	
 	/* correct content width. */
+	#content,
 	.left-wrap,
 	.detailed_banner {
-		width: inherit !important;
+		width: 800px !important;
+		margin: 0 auto;
 	}
 	
-	/* correct footer, related content */
+	/* remove footer, related content */
 	footer,
 	.article-card.J_trigger_ani,
 	.fusion-card,
@@ -40,9 +42,7 @@
 	
 	/* for vertical screen. */
 	html {
-		min-width: auto;
-		max-width: 900px;
-		margin: 0 auto;
+		min-width: 800px;
 	}
 	.content-inner,
 	.wrap,
