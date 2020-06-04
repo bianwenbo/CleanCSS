@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			smzdm.com
 @author			Bian Wenbo
-@version		2.1.1
+@version		2.1.2
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
@@ -64,8 +64,9 @@
 	/* left float box */
 	#leftLayer {
 		position: fixed !important;
-		top: 30px !important;
+		top: auto !important;
 		right: 0px !important;
+		bottom: 20px !important;
 		left: auto !important;
 		z-index: 100;
 		width: 30px;
