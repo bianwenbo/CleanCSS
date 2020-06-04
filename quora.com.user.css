@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			quora.com
 @author			Bian Wenbo
-@version		1.0.1
+@version		1.0.2
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
@@ -30,5 +30,10 @@
 	/* Remove ads */
 	.spacing_log_question_page_ad {
 		display: none;
+	}
+	/* Correct width for vertical screen. */
+	#root>div>div>div:last-child>div>div {
+		width: inherit !important;
+		max-width: 1000px;
 	}
 }
