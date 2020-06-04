@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			smzdm.com
 @author			Bian Wenbo
-@version		2.1.2
+@version		2.1.3
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
@@ -65,9 +65,9 @@
 	#leftLayer {
 		position: fixed !important;
 		top: auto !important;
-		right: 0px !important;
-		bottom: 20px !important;
-		left: auto !important;
+		right: auto !important;
+		bottom: 50px !important;
+		left: 0px !important;
 		z-index: 100;
 		width: 30px;
 	}
