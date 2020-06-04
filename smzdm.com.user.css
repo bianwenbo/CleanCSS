@@ -1,39 +1,78 @@
 /* ==UserStyle==
 @name			smzdm.com
 @author			Bian Wenbo
-@version		1.0.0
+@version		2.0.0
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
 
 @-moz-document domain("post.smzdm.com")
 {
-	#feed-side,
-	#elevator,
-	.qrcode,
-	.zhong-contant,
-	.article-card.J_trigger_ani,
-	.fusion-card,
-	#footer {
+	/* remove sidebar. */
+	#feed-side {
 		display: none !important;
 	}
 	
+	/* correct content width. */
 	.left-wrap,
-	.content-inner {
-		width: auto !important;
+	.detailed_banner {
+		width: inherit !important;
 	}
 	
+	/* correct footer, related content */
+	footer,
+	.article-card.J_trigger_ani,
+	.fusion-card,
+	#J_old_mention {
+		display: none !important;
+	}
+	
+	/* correct comment width. */
 	.comment_conBox {
-		width: auto !important;
-		float: none !important;
+		width: inherit;
+		float: none;
 	}
 	
+	/* disable fixed top bar. */
 	#global-search {
-		position: static !important;
+		position: inherit !important;
 	}
 	
-	.wrap {
-		/*width: 50% !important;*/
-		width: 1000px !important;
+	/* for vertical screen. */
+	html {
+		min-width: auto;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.content-inner,
+	.wrap,
+	#global-search .search-inner,
+	#global-nav .nav-inner{
+		width: inherit;
+	}
+	.z-stuff-bar-footer {
+		display: none !important;
+	}
+	.control-list {
+		display: none;
+	}
+	#sub-header {
+		min-height: 140px;
+	}
+	
+	/* left float box */
+	#leftLayer {
+		position: fixed !important;
+		top: 30px !important;
+		right: 0px !important;
+		left: auto !important;
+		z-index: 100;
+		width: 30px;
+	}
+	.left-layer .comment a i {
+		left: 25%;
+	}
+	.qrcode {
+		display: none;
 	}
 }
