@@ -102,8 +102,9 @@
 		padding-left: 5px;
 	}
 	
-	.FollowButton {
+	.Button {
 		min-width: auto;
+		margin: 0;
 	}
 }
 
