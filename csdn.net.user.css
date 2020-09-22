@@ -50,4 +50,9 @@
 		background: none !important;
 		min-width: auto !important;
 	}
+	
+	/* unFixed footer banner. */
+	.left-toolbox {
+		position: static !important;
+	}
 }
