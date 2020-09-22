@@ -1,15 +1,19 @@
 /* ==UserStyle==
 @name			zhihu.com
 @author			Bian Wenbo
-@version		2.0.7
+@version		2.0.8
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
 
 @-moz-document domain("www.zhihu.com")
 {
-	/* Hide the Topstory section in home page. */
+	/* Hide the Topstory section in home page. 
 	.Topstory {
+		display: none;
+	}*/
+	a[aria-controls="Topstory-recommend"],
+	a[aria-controls="Topstory-hot"] {
 		display: none;
 	}
 	
@@ -96,6 +100,10 @@
 	
 	.QuestionHeader-main.QuestionHeader-footer-main {
 		padding-left: 5px;
+	}
+	
+	.FollowButton {
+		min-width: auto;
 	}
 }
 
