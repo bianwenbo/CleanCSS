@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			reddit.com
 @author			Bian Wenbo
-@version		1.1.1
+@version		2.0.0
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
@@ -9,7 +9,7 @@
 @-moz-document domain("reddit.com")
 {
 	/* Static: header */
-	body>div>div>div>div>div:nth-child(2)>header {
+	#SHORTCUT_FOCUSABLE_DIV>div:nth-child(2)>header {
 		/* Hide header */
 		/*display: none;*/
 		position: static;
@@ -17,36 +17,37 @@
 	}
 	
 	/* Hide: background */
-	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(1) {
+	#SHORTCUT_FOCUSABLE_DIV>div:nth-child(4)>div:first-child>div:nth-child(1) {
 		display: none;
 	}
 	
 	/* Hide: fixed title */
-	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(2) {
+	#SHORTCUT_FOCUSABLE_DIV>div:nth-child(4)>div:first-child>div:nth-child(2) {
 		display: none;
 	}
 	
 	/* Hide: More posts from the community */
 	/* Note: The option display:none cause blank page on macOS Safari. */
-	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(3)>div:first-child>div:nth-child(3) {
-		height: 1px;
-		visibility: hidden;
+	#SHORTCUT_FOCUSABLE_DIV>div:nth-child(4)>div:first-child>div:nth-child(3)>div:first-child>div:nth-child(3) {
+		/*height: 1px;
+		visibility: hidden;*/
+		display: none;
 	}
 	
 	/* Hide the white space */
-	body>div>div>div>div>div:nth-child(4)>div:first-child {
+	#SHORTCUT_FOCUSABLE_DIV>div:nth-child(4)>div:first-child {
 		margin-top: 0;
 	}
 	
-	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(3) {
+	#SHORTCUT_FOCUSABLE_DIV>div:nth-child(4)>div:first-child>div:nth-child(3) {
 		margin: 0 auto;
 	}
 	
-	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(3)>div {
+	#SHORTCUT_FOCUSABLE_DIV>div:nth-child(4)>div:first-child>div:nth-child(3)>div {
 		padding-top: 0;
 	}
 	
-	body>div>div>div>div>div:nth-child(4)>div:first-child>div:nth-child(3)>div:nth-child(2)>div:first-child>div:nth-child(2) {
+	#SHORTCUT_FOCUSABLE_DIV>div:nth-child(4)>div:first-child>div:nth-child(3)>div:nth-child(2)>div:first-child>div:nth-child(2) {
 		display: none;
 	}
 }
