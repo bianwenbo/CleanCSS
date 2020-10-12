@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           www.sohu.com
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Articles in sohu.
+@author         bianwenbo
+==/UserStyle== */
+@-moz-document domain("www.sohu.com") {
+	/* 隐藏冗余元素 */
+	.column.left,
+	#right-side-bar,
+	#main-header,
+	#articleAllsee,
+	.groom-read {
+		display: none;
+	}
+	/* 调整阅读视图 */
+	#article-container,
+	.left.main {
+		width: auto !important;
+	}
+	.left.main {
+		margin: 0 30px;
+	}
+	body {
+		font-family: sans-serif, serif;
+	}
+}
