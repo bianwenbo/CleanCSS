@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           www.sohu.com
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Articles in sohu.
 @author         bianwenbo
 ==/UserStyle== */
@@ -11,7 +11,8 @@
 	#right-side-bar,
 	#main-header,
 	#articleAllsee,
-	.groom-read {
+	.groom-read,
+	#float-btn {
 		display: none;
 	}
 	/* 调整阅读视图 */
@@ -20,7 +21,10 @@
 		width: auto !important;
 	}
 	.left.main {
-		margin: 0 30px;
+		margin: 0 auto !important;
+		max-width: 900px;
+		float: none;
+		display: block;
 	}
 	body {
 		font-family: sans-serif, serif;
