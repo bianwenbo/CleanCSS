@@ -1,0 +1,41 @@
+/* ==UserStyle==
+@name           www.zcool.com.cn/article
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Bianwenbo
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.zcool.com.cn/article/") {
+    /* 隐藏无关元素 */
+	.details-right-wrap,
+	header,
+	.main-wrapper-advlong-top,
+	footer,
+	#detail-related-recommend,
+	.recommend-card,
+	#detailsGogoupAd,
+	.details-userinfo-wrap  {
+		display: none !important;
+	}
+	/* 阅读视图 */
+	body, html {
+		font-family: sans-serif, serif;
+	}
+	.content {
+		width: 100% !important;
+		max-width: 900px;
+		margin: 0 !important;
+	}
+	.work-details-content {
+		padding: 0 5%;
+	}
+	.main-wrapper,
+	#body,
+	.work-details-left,
+	.work-show-box, p {
+		width: 100% !important;
+		float: none;
+		display: block;
+	}
+}
