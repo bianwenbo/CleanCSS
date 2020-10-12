@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           www.sohu.com
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    Articles in sohu.
 @author         bianwenbo
 ==/UserStyle== */
@@ -21,10 +21,11 @@
 		width: auto !important;
 	}
 	.left.main {
-		margin: 0 auto !important;
+		margin: auto !important;
 		max-width: 900px;
 		float: none;
 		display: block;
+		padding: 15px;
 	}
 	body {
 		font-family: sans-serif, serif;
