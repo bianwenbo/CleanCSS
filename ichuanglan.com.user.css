@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name           bbs.ichuanglan.com - 2020/10/16 下午5:22:33
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         BianWenbo
+==/UserStyle== */
+
+@-moz-document domain("bbs.ichuanglan.com") {
+    /* 隐藏元素 */
+	#floatTools 
+	{
+		display: none;
+	}
+	/* 取消浮动 */
+	#nv,
+	.pls.favatar {
+		position: static !important;
+	}
+	
+}
