@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name           www.solidot.org - 2020/10/22 下午3:04:39
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         BianWenbo
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.solidot.org/story") {
+    /* 隐藏无关元素 */
+	#right,
+	.logo_sosobox,
+	.nav-secondary-wrap,
+	a.share,
+	.p_mainnew > img:last-child,
+	#footer,
+	.statement,
+	p.e_reply.next_art
+	{
+		display: none !important;
+	}
+	
+	/* 调整阅读界面 */
+	#main {
+		min-width: 800px;
+		width: 50%;
+	}
+	#center {
+		width: 100%;
+	}
+	.p_mainnew,
+	.reply_list {
+		font-size: 1.6em;
+	}
+}
