@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           bbs.ichuanglan.com
 @namespace      github.com/openstyles/stylus
-@version        2.1.1
+@version        2.2.0
 @description    A new userstyle
 @author         BianWenbo
 ==/UserStyle== */
@@ -10,7 +10,9 @@
 	#floatTools,
 	#ct > div:nth-child(3),
 	#ft,
-	#sitefocus {
+	#sitefocus,
+	#focus,
+	form[class="searchform"] + .tl div:nth-child(2) {
 		display: none;
 	}
 	/* 取消浮动 */
@@ -57,5 +59,16 @@
 	}
 	.pct {
 		color: black;
+	}
+	/* - 视图宽度 */
+	.wp {
+		max-width: 800px;
+		width: auto;
+	}
+	.scbar_narrow #scbar_txt {
+		width: 100px;
+	}
+	#scbar_hot {
+		max-width: 400px !important;
 	}
 }
