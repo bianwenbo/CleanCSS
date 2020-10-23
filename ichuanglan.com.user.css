@@ -1,15 +1,16 @@
 /* ==UserStyle==
-@name           bbs.ichuanglan.com - 2020/10/16 下午5:22:33
+@name           bbs.ichuanglan.com
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        2.0.0
 @description    A new userstyle
 @author         BianWenbo
 ==/UserStyle== */
 
 @-moz-document domain("bbs.ichuanglan.com") {
     /* 隐藏元素 */
-	#floatTools 
-	{
+	#floatTools,
+	#ct > div:nth-child(3),
+	#ft {
 		display: none;
 	}
 	/* 取消浮动 */
@@ -17,5 +18,38 @@
 	.pls.favatar {
 		position: static !important;
 	}
-	
+	/* 优化视图 */
+	/* - 减小头像 */
+	.avatar, 
+	.avatar img,
+	.pls p{
+		max-width: 50px !important;
+		max-height: 50px !important;
+		margin: 0 auto !important;
+		padding: 0 0 !important;
+		text-align: center;
+	}
+	/* - 隐藏元素 */
+	.tns.xg2,
+	dl.pil.cl,
+	ul.xl.xl2.o.cl,
+	span.pbg2,
+	td.plc.plm,
+	tbody > tr:nth-child(n+2)
+	{
+		display: none;
+	}
+	/* - 隐藏虚线 */
+	.pi,
+	div[id^="post_rate_div_"] {
+		border-bottom: none !important;
+	}
+	/* - 添加虚线分隔 */
+	div[id^="post_"] {
+		border-bottom: 2px dashed #e6e6e6;
+	}
+	/* - 弱化干扰元素 */
+	.authi > * {
+		color: silver;
+	}
 }
