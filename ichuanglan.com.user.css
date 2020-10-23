@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           bbs.ichuanglan.com
 @namespace      github.com/openstyles/stylus
-@version        2.1.0
+@version        2.1.1
 @description    A new userstyle
 @author         BianWenbo
 ==/UserStyle== */
@@ -9,7 +9,8 @@
 	/* 隐藏元素 */
 	#floatTools,
 	#ct > div:nth-child(3),
-	#ft {
+	#ft,
+	#sitefocus {
 		display: none;
 	}
 	/* 取消浮动 */
@@ -50,8 +51,11 @@
 	div[id^="post_"]:nth-last-child(2) > table:not(:first-child):not(:last-child) > tbody > tr {
 		border-bottom: 2px dashed #e6e6e6;
 	}
-	/* - 弱化干扰元素 */
-	.authi > * {
+	/* - 字体颜色 */
+	.pti .authi > * {
 		color: silver;
+	}
+	.pct {
+		color: black;
 	}
 }
