@@ -1,13 +1,12 @@
 /* ==UserStyle==
 @name           bbs.ichuanglan.com
 @namespace      github.com/openstyles/stylus
-@version        2.0.0
+@version        2.1.0
 @description    A new userstyle
 @author         BianWenbo
 ==/UserStyle== */
-
 @-moz-document domain("bbs.ichuanglan.com") {
-    /* 隐藏元素 */
+	/* 隐藏元素 */
 	#floatTools,
 	#ct > div:nth-child(3),
 	#ft {
@@ -20,9 +19,9 @@
 	}
 	/* 优化视图 */
 	/* - 减小头像 */
-	.avatar, 
+	.avatar,
 	.avatar img,
-	.pls p{
+	.pls p {
 		max-width: 50px !important;
 		max-height: 50px !important;
 		margin: 0 auto !important;
@@ -35,8 +34,7 @@
 	ul.xl.xl2.o.cl,
 	span.pbg2,
 	td.plc.plm,
-	tbody > tr:nth-child(n+2)
-	{
+	tbody > tr:nth-child(n+2) {
 		display: none;
 	}
 	/* - 隐藏虚线 */
@@ -45,7 +43,11 @@
 		border-bottom: none !important;
 	}
 	/* - 添加虚线分隔 */
-	div[id^="post_"] {
+	div[id^="post_"]:not(:nth-last-child(2)) {
+		border-bottom: 2px dashed #e6e6e6;
+	}
+	/* - 兼容自动翻页 */
+	div[id^="post_"]:nth-last-child(2) > table:not(:first-child):not(:last-child) > tbody > tr {
 		border-bottom: 2px dashed #e6e6e6;
 	}
 	/* - 弱化干扰元素 */
