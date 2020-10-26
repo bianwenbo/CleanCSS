@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           bbs.ichuanglan.com
 @namespace      github.com/openstyles/stylus
-@version        2.2.0
+@version        2.2.1
 @description    A new userstyle
 @author         BianWenbo
 ==/UserStyle== */
@@ -12,7 +12,11 @@
 	#ft,
 	#sitefocus,
 	#focus,
-	form[class="searchform"] + .tl div:nth-child(2) {
+	form[class="searchform"] + .tl div:nth-child(2),
+	table#scform_form + div,
+	.qq_bind,
+	#scrolltop,
+	.barrage {
 		display: none;
 	}
 	/* 取消浮动 */
@@ -37,7 +41,7 @@
 	ul.xl.xl2.o.cl,
 	span.pbg2,
 	td.plc.plm,
-	tbody > tr:nth-child(n+2) {
+	table.plhin > tbody > tr:nth-child(n+2) {
 		display: none;
 	}
 	/* - 隐藏虚线 */
@@ -70,5 +74,10 @@
 	}
 	#scbar_hot {
 		max-width: 400px !important;
+	}
+	table.t_table {
+		max-width: 600px;
+		width: 600px;
+		background-color: white;
 	}
 }
