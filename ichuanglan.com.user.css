@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           bbs.ichuanglan.com
 @namespace      github.com/openstyles/stylus
-@version        2.2.1
+@version        2.2.2
 @description    A new userstyle
 @author         BianWenbo
 ==/UserStyle== */
@@ -36,13 +36,16 @@
 		text-align: center;
 	}
 	/* - 隐藏元素 */
-	.tns.xg2,
+	.tns.xg2~p,
 	dl.pil.cl,
 	ul.xl.xl2.o.cl,
 	span.pbg2,
 	td.plc.plm,
 	table.plhin > tbody > tr:nth-child(n+2) {
 		display: none;
+	}
+	.pi {
+		margin-bottom: 0;
 	}
 	/* - 隐藏虚线 */
 	.pi,
