@@ -1,40 +1,45 @@
 /* ==UserStyle==
 @name			csdn.net
 @author			Bian Wenbo
-@version		2.1.5
+@version		3.0.0
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
 
 @-moz-document domain("blog.csdn.net")
 {
-	/* unknown NONE
-	.pulllog-box,
-	div[id*="kp_box"],
-	#adContent,
-	.meau-gotop-box,
-	.jiathis_style,
-	*/
+	/* 右侧工具栏 */
+	aside>div:not(#asidedirectory) {
+		display: none !important;
+	}
+	#asideCategory {
+		visibility:hidden !important;
+	}
+	/* - 固定目录位置 */
+	aside.blog_container_aside {
+		position: sticky !important;
+	}
 	
-	/* Hide useless elements. */
-	/* saidbar left */
-	aside,
-	/* header */
+	/* 隐藏无用元素 */
+	/* - 头部 */
 	#csdn-toolbar,
-	/* saidbar right: toolbox */
-	.recommend-right, .tool-box, .csdn-side-toolbar,
-	/* recommned articles */
+	/* - 右侧边栏：工具栏 */
+	.recommend-right, 
+	.tool-box, 
+	.csdn-side-toolbar>a:not(:last-child),
+	/* - 推荐文章 */
 	.recommend-box,
-	/* footer */
+	/* - 底部 */
 	.template-box,
-	/* login QR code */
+	.blog-footer-bottom,
+	/* - 登录QR二维码 */
 	.login-mark, #passportbox,
-	/* Remove ads */
+	/* - 广告 */
 	main>div[id*="ad"] {
 		display: none !important;
 	}
 	
-	/* layout: center content. */
+	/* 排版：内容居中 */
 	.space_container~main {
 		margin: auto;
 		float: none;
@@ -45,13 +50,13 @@
 		width: auto !important;
 	}
 	
-	/* Remove background. */
+	/* 删除背景 */
 	body {
 		background: none !important;
 		min-width: auto !important;
 	}
 	
-	/* unFixed footer banner. */
+	/* 取消底部工具栏的固定 */
 	.left-toolbox {
 		position: static !important;
 	}
