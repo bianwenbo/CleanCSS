@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			csdn.net
 @author			Bian Wenbo
-@version		3.0.0
+@version		3.1.1
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
@@ -18,6 +18,12 @@
 	/* - 固定目录位置 */
 	aside.blog_container_aside {
 		position: sticky !important;
+		width: 0px !important;
+	}
+	#asidedirectory {
+		position: absolute;
+		width: 300px;
+		right: 50px;
 	}
 	
 	/* 隐藏无用元素 */
@@ -44,7 +50,6 @@
 		margin: auto;
 		float: none;
 	}
-	
 	.container#mainBox {
 		margin: auto !important;
 		width: auto !important;
@@ -59,5 +64,9 @@
 	/* 取消底部工具栏的固定 */
 	.left-toolbox {
 		position: static !important;
+	}
+	ul.toolbox-list > li:nth-child(n+5),
+	li#tool-share {
+		display: none;
 	}
 }
