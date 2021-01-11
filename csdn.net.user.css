@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			csdn.net
 @author			Bian Wenbo
-@version		3.1.1
+@version		3.1.2
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
@@ -44,6 +44,11 @@
 	main>div[id*="ad"] {
 		display: none !important;
 	}
+    /* - 左侧边栏：归档 */
+    #asideArchive {
+        position: absolute;
+        top: -1000px;
+    }
 	
 	/* 排版：内容居中 */
 	.space_container~main {
