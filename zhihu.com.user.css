@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name			zhihu.com
 @author			Bian Wenbo
-@version		2.0.8
+@version		2.0.9
 @namespace		bianwenbo
 @preprocessor	default
 ==/UserStyle== */
@@ -18,7 +18,9 @@
 	}
 	
 	/* Hide the useless elements. */
-	.CornerButtons {
+	.CornerButtons,
+    /* 隐藏继续阅读下边栏 */
+    .ModalWrap {
 		display: none;
 	}
 	
