@@ -1,81 +1,21 @@
 /* ==UserStyle==
-@name			workflowy.com
-@author			Bian Wenbo
-@version		1.1.1
-@namespace		bianwenbo
-@preprocessor	default
+@name           workflowy.com
+@namespace      github.com/openstyles/stylus
+@version        2.0.0
+@description    A new userstyle
+@author         Me
 ==/UserStyle== */
 
-@-moz-document domain("workflowy.com")
-{
-	/* Static the header 
-	div[class^="header"] {
-		position: absolute;
-	}*/
-	/* Minimize the header */
-	div[class^="header"],
-	div[class^="header"]>div,
-	label[class^="searchBox"],
-	#srch-input {
-		height: 24px;
+@-moz-document domain("workflowy.com") {
+    /* 下划线高亮 */
+    u {
+		text-decoration-line: none !important;
+		background-color: yellow;
 	}
-	
-	div[class^="breadcrumbs"]>a {
-		height: 24px;
-		line-height: 24px;
-	}
-	
-	div[class^="header"]>div:first-child>div,
-	div[class*="gearMenu"]>div {
-		height: 24px;
-		width: 24px;
-	}
-	
-	#srch-input+svg[height="12"] {
-		top: 6px;
-	}
-	
-	#srch-input+svg[height="20"] {
-		top: 2px;
-	}
-	
-	div[class^="header"]+div {
-		top: 24px;
-	}
-	
-	div[class^="pageContainer"]>div:first-child {
-		margin-top: 48px;
-	}
-	
-	/* Minimize the footer reminder. */
-	div[class^="pageContainer"]>div:last-child {
-		border-top: 0;
-		padding: 1px 0;
-		width: auto;
-	}
-	
-	div[class^="pageContainer"]>div:last-child>div:first-child {
-		margin-bottom: 3px;
-	}
-	
-	div[class^="pageContainer"]>div:last-child>div:first-child>button {
-		display: none;
-	}
-	
-	div[class^="pageContainer"]>div:last-child>div:last-child {
-		height: 3px
-	}
-	
-	/* Remove the nodes limit. FAILED: keyboard shortcut failed.
-	#app > div:nth-child(5) ~ div  {
-		display: none;
-	}
-	div[class^="pageContainer"] > div:last-child {
-		display: none;
-	}
-	element.style,
-	body,
-	#app {
-		overflow: visible !important;
-	}*/
+    /* 取消超链接自动样式 */
+    a.contentLink {
+        pointer-events: none;
+        text-decoration: none !important;
+        color: inherit !important;
+    }
 }
